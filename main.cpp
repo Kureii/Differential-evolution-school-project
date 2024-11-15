@@ -19,7 +19,7 @@ namespace plt = matplotlibcpp;
 
 void WriteMarkdownHeader(const std::string &filename,
                          const std::string &func_name) {
-  std::ofstream file(filename, std::ios::app);  // Append mód
+  std::ofstream file(filename, std::ios::app);
   if (!file.is_open()) {
     std::cerr << "Unable to open file: " << filename << std::endl;
     return;
